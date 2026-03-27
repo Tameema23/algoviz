@@ -1,34 +1,42 @@
-# AlgoViz -- Algorithm Visualizer
+# Algorithm Visualizer
 
-An interactive 3D algorithm visualization platform covering sorting, pathfinding, graph, tree, and searching algorithms. Built with React, Three.js, and Framer Motion.
+An interactive 3D algorithm visualization platform covering sorting, pathfinding, graph, tree, and searching algorithms. Built with React and Three.js.
 
-**Live:** [your-url-here.vercel.app](https://your-url-here.vercel.app)
+**Live:** [your-url.vercel.app](https://your-url.vercel.app)
+
+![Algorithm Visualizer Demo](demo.gif)
 
 ---
 
 ## Algorithms Covered
 
-**Sorting (3D Three.js bars):** Bubble, Selection, Insertion, Merge, Quick, Heap
+**Sorting (3D animated bars via Three.js)**
+Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, Heap Sort
 
-**Pathfinding (interactive grid):** BFS, DFS, Dijkstra, A*
+**Pathfinding (interactive grid — draw walls, drag nodes)**
+BFS, DFS, Dijkstra's Algorithm, A*
 
-**Graph:** BFS, DFS, Topological Sort, Cycle Detection
+**Graph**
+BFS, DFS, Topological Sort, Cycle Detection
 
-**Trees (BST):** Insert, Search, Inorder, Preorder, Postorder
+**Trees (Binary Search Tree)**
+Insert, Search, Inorder, Preorder, Postorder Traversal
 
-**Searching:** Linear Search, Binary Search
+**Searching**
+Linear Search, Binary Search
 
 ---
 
 ## Features
 
-- 3D animated sorting bars via React Three Fiber
-- Interactive pathfinding grid with drawable walls and draggable nodes
-- Interactive graph editor -- add nodes, shift+click to connect edges
-- BST live insert and traversal with step-by-step animation
-- Play, pause, step forward/back, and speed controls on every visualizer
-- Pseudocode panel highlighting the active line at each step
-- Time and space complexity shown for every algorithm
+- 3D sorting bars rendered with Three.js via React Three Fiber — color-coded for comparing, swapping, pivot, and sorted states
+- Interactive pathfinding grid — click and drag to draw walls, drag start/end nodes
+- Interactive graph editor — add nodes, shift+click to connect edges, drag to reposition
+- BST live insert and search with step-by-step animation and traversal order display
+- Play, pause, step forward/back, speed control, and jump to end on every visualizer
+- Pseudocode panel highlighting the exact line executing at each step
+- Side-by-side comparison mode — run two sorting algorithms simultaneously on the same array
+- Time and space complexity displayed for every algorithm
 
 ---
 
@@ -59,58 +67,16 @@ Open `http://localhost:5173`
 
 ---
 
-## Deploying to Vercel
+## Deploying
 ```bash
 npm install -g vercel
 vercel
 ```
 
-Vercel auto-detects Vite. The included `vercel.json` handles client-side routing so direct URL navigation works correctly.
-
----
-
-## Project Structure
-```
-src/
-  algorithms/
-    sorting/        -- Step generators for all 6 sorting algorithms
-    pathfinding/    -- BFS, DFS, Dijkstra, A* on a grid
-    graph/          -- BFS, DFS, Topological Sort, Cycle Detection
-    tree/           -- BST operations and traversals
-    searching/      -- Linear and Binary Search
-  components/
-    sorting/        -- 3D Three.js visualizer
-    pathfinding/    -- Interactive grid visualizer
-    graph/          -- SVG graph editor
-    tree/           -- SVG BST visualizer
-    searching/      -- Bar chart visualizer
-    ui/             -- Controls, PseudoCode, AlgoInfo, Layout, StepMessage
-  pages/
-    Landing.jsx     -- 3D animated hero landing page
-  store/
-    index.js        -- Zustand global playback state
-  hooks/
-    usePlayback.js  -- Animation interval hook
-```
+Vercel auto-detects Vite. The included `vercel.json` handles client-side routing.
 
 ---
 
 ## Author
 
-Tameem Aboueldahab -- [github.com/Tameema23](https://github.com/Tameema23)
-```
-
----
-
-After adding those three files your folder structure looks like this:
-```
-algoviz/
-  .gitignore          <-- add this
-  vercel.json         <-- add this
-  README.md           <-- add this
-  package.json
-  vite.config.js
-  tailwind.config.js
-  index.html
-  src/
-  public/
+Tameem Aboueldahab — [github.com/Tameema23](https://github.com/Tameema23)

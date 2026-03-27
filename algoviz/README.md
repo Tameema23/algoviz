@@ -2,7 +2,7 @@
 
 An interactive 3D algorithm visualization platform covering sorting, pathfinding, graph, tree, and searching algorithms. Built with React and Three.js.
 
-**Live:** [https://algoviz-nine.vercel.app/]([https://your-url.vercel.app](https://algoviz-nine.vercel.app/))
+**Live:** [algoviz.vercel.app](https://algoviz.vercel.app)
 
 ![Algorithm Visualizer Demo](demo.gif)
 
